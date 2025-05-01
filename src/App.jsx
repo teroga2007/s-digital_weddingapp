@@ -1,15 +1,16 @@
 // wedding-site-starter
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import RSVP from './pages/RSVP';
-import Gifts from './pages/Gifts';
-import EventInfo from './pages/EventInfo';
-import Gallery from './pages/Gallery';
-import FAQs from './pages/FAQ';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import RSVP from "./pages/RSVP";
+import Gifts from "./pages/Gifts";
+import EventInfo from "./pages/EventInfo";
+import Gallery from "./pages/Gallery";
+import FAQs from "./pages/FAQ";
+import Story from "./pages/Story";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/story" element={<Story />} />
               <Route path="/rsvp" element={<RSVP />} />
               <Route path="/gifts" element={<Gifts />} />
               <Route path="/event-info" element={<EventInfo />} />
