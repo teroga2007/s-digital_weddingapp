@@ -1,12 +1,59 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sitio Web de Bodas
 
-Currently, two official plugins are available:
+Este proyecto es un sitio web para una boda, donde los invitados pueden encontrar información importante, ver preguntas frecuentes, acceder a la lista de regalos y conocer detalles para aportes monetarios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Descripción
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El sitio web está diseñado para ser fácil de usar y visualmente atractivo, ofreciendo:
+
+- **Página de Inicio** con bienvenida personalizada.
+- **Preguntas Frecuentes (FAQs)** con animaciones suaves para mostrar respuestas.
+- **Página de Regalos** con lista de regalos en Amazon, información de cuentas bancarias y SINPE Móvil para aportes monetarios, además de un carrusel de fotos personales.
+- Diseño responsivo y moderno con animaciones usando [Framer Motion](https://www.framer.com/motion/).
+- Uso de React y Tailwind CSS para la interfaz.
+
+---
+
+## Estructura del Proyecto
+
+- `/src/components` - Componentes reutilizables como PageWrapper.
+- `/src/pages` - Páginas principales del sitio (FAQs, Gifts, Inicio, etc.).
+- `/src/assets` - Imágenes y otros recursos estáticos.
+- `/src/data` - Datos estáticos, por ejemplo para preguntas frecuentes.
+
+---
+
+## Tecnologías
+
+- React
+- Tailwind CSS
+- Framer Motion (para animaciones)
+- Vite / Create React App (según configuración del proyecto)
+
+---
+
+## Instalación
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repo-boda.git
+   ```
+2. Instala dependencias
+3. Ejecuta la app
+4. 
+
+
+## Contacto
+
+Para dudas o sugerencias, contacta a:
+
+**Nombre de los novios**
+
+Correo electrónico: [sterogam@gmail.com](mailto:sterogam@gmail.com)
+
+
+¡Gracias por visitar nuestro sitio de boda!
