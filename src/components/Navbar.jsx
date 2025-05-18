@@ -10,25 +10,27 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 backdrop-blur-sm transition-colors duration-500 ${
         isHome
           ? "bg-transparent text-white absolute"
-          : "bg-white text-black shadow-md relative"
+          : "bg-dark-500 text-black shadow-lg relative"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between p-3">
+      <div className="container mx-auto flex align-middle items-center justify-between p-4">
         <Link
           to="/"
-          className={`text-4xl font-bold font-handwriting ${
-            isHome ? "text-white" : "text-primary-500"
+          className={`text-3xl font-bold font-handwriting transition-colors duration-500 hover:text-primary-500 ${
+            isHome ? "text-white" : "text-white"
           }`}
         >
-          Marcial & Nicole
+          Nicole & Marcial
         </Link>
 
         {/* Botón hamburguesa visible solo en móvil */}
         <button
-          className="md:hidden text-3xl focus:outline-none"
+          className={`md:hidden text-white text-3xl focus:outline-none transition-transform duration-500 transform ${
+            isOpen ? "rotate-90" : "rotate-0"
+          }`}
           onClick={toggleMenu}
           aria-label="Abrir menú"
         >
@@ -36,59 +38,97 @@ export default function Navbar() {
         </button>
 
         {/* Menú normal en pantallas grandes */}
-        <div className="hidden md:flex space-x-4">
-          <Link to="/event-info" className="hover:underline">
+        <div className="hidden md:flex space-x-8 text-lg font-medium">
+          <Link
+            to="/event-info"
+            className="hover:text-primary-500 text-white transition-colors duration-300"
+          >
             Info
           </Link>
-          <Link to="/story" className="hover:underline">
+          <Link
+            to="/story2"
+            className="hover:text-primary-500 text-white transition-colors duration-300"
+          >
             Historia
           </Link>
-          <Link to="/gifts" className="hover:underline">
+          <Link
+            to="/gifts"
+            className="hover:text-primary-500 text-white transition-colors duration-300"
+          >
             Regalos
           </Link>
-          <Link to="/gallery" className="hover:underline">
+          <Link
+            to="/gallery"
+            className="hover:text-primary-500 text-white transition-colors duration-300"
+          >
             Galería
           </Link>
-          <Link to="/rsvp" className="hover:underline">
+          <Link
+            to="/rsvp"
+            className="hover:text-primary-500 text-white transition-colors duration-300"
+          >
             Confirmar
           </Link>
-          <Link to="/faqs" className="hover:underline">
+          <Link
+            to="/faqs"
+            className="hover:text-primary-500 text-white transition-colors duration-300"
+          >
             Preguntas Frecuentes
           </Link>
         </div>
       </div>
 
       {/* Menú desplegable en mobile */}
-      {isOpen && (
-        <div className="md:hidden bg-white text-black px-4 pb-4 space-y-2">
+      <div
+        className={`md:hidden bg-dark-500 text-white overflow-hidden transition-all duration-700 ease-in-out shadow-lg ${
+          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="px-6 py-4 space-y-4">
           <Link
             to="/event-info"
-            className="block"
             onClick={() => setIsOpen(false)}
+            className="block text-lg font-medium transition-colors duration-300 hover:text-primary-500"
           >
             Info
           </Link>
-          <Link to="/story" className="block" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/story2"
+            onClick={() => setIsOpen(false)}
+            className="block text-lg font-medium transition-colors duration-300 hover:text-primary-500"
+          >
             Historia
           </Link>
-          <Link to="/gifts" className="block" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/gifts"
+            onClick={() => setIsOpen(false)}
+            className="block text-lg font-medium transition-colors duration-300 hover:text-primary-500"
+          >
             Regalos
           </Link>
           <Link
             to="/gallery"
-            className="block"
             onClick={() => setIsOpen(false)}
+            className="block text-lg font-medium transition-colors duration-300 hover:text-primary-500"
           >
             Galería
           </Link>
-          <Link to="/rsvp" className="block" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/rsvp"
+            onClick={() => setIsOpen(false)}
+            className="block text-lg font-medium transition-colors duration-300 hover:text-primary-500"
+          >
             Confirmar
           </Link>
-          <Link to="/faqs" className="block" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/faqs"
+            onClick={() => setIsOpen(false)}
+            className="block text-lg font-medium transition-colors duration-300 hover:text-primary-500"
+          >
             Preguntas Frecuentes
           </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

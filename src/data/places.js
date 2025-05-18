@@ -1,6 +1,6 @@
 const places = [
   {
-    section: "Hoteles Cercanos",
+    section: "Recomendación de Alojamiento",
     description:
       "Se recomienda buscarlos en el sitio oficial de cada hotel o en plataformas como Booking.com o Airbnb.",
     places: [
@@ -26,12 +26,7 @@ const places = [
         description:
           "Hotel con piscina al aire libre, jardines y habitaciones con aire acondicionado. Muy cerca de la playa Boca Barranca.",
         price: "💰 Desde 30.000 CRC por habitación doble por noche."
-      }
-    ]
-  },
-  {
-    section: "Cabinas y Alojamiento Económico",
-    places: [
+      },
       {
         name: "Cabinas Yolymar",
         address: "📍 Puntarenas (a 15 minutos del lugar de la boda)",
@@ -40,7 +35,7 @@ const places = [
         price: "💰 Desde 20.000 CRC por habitación doble por noche."
       },
       {
-        name: "⭐ Recomendación Top: Cabinas Caldera 2",
+        name: "Cabinas Caldera 2",
         address: "📍 El Roble, Puntarenas (a 2 minutos del lugar de la boda)",
         description:
           "Alojamiento familiar con habitaciones sencillas para hasta 7 personas. Incluye cocina equipada, piscina y área de BBQ.",

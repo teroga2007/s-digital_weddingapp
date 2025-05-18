@@ -11,6 +11,7 @@ import EventInfo from "./pages/EventInfo";
 import Gallery from "./pages/Gallery";
 import FAQs from "./pages/FAQ";
 import Story from "./pages/Story";
+import Story2 from "./pages/Story2";
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/story" element={<Story />} />
+              <Route path="/story2" element={<Story2 />} />
               <Route path="/rsvp" element={<RSVP />} />
               <Route path="/gifts" element={<Gifts />} />
               <Route path="/event-info" element={<EventInfo />} />

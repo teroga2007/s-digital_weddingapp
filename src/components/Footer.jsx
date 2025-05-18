@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-accent-500 text-center text-sm p-4">
+    <footer className="bg-dark-500 text-center text-white text-sm p-4">
       © {new Date().getFullYear()} Powered by{" "}
       <a
-        className="text-cyan-900 hover:text-cyan-600 font-semibold"
+        className="text-white text-md font-bold hover:underline"
         href="mailto:sterogam@gmail.com"
       >
         S-Digital
