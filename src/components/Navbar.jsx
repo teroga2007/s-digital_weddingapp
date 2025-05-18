@@ -46,7 +46,7 @@ export default function Navbar() {
             Info
           </Link>
           <Link
-            to="/story2"
+            to="/story"
             className="hover:text-primary-500 text-white transition-colors duration-300"
           >
             Historia
@@ -93,7 +93,7 @@ export default function Navbar() {
             Info
           </Link>
           <Link
-            to="/story2"
+            to="/story"
             onClick={() => setIsOpen(false)}
             className="block text-lg font-medium transition-colors duration-300 hover:text-primary-500"
           >
